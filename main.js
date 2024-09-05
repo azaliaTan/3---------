@@ -9,7 +9,7 @@ let b;
  b = prompt('введите количество денег', 0);
 
 
- if(Number(a)>=0 || Number(b)>=0){
+ if(Number(a)>=0 && Number(b)>=0){
     if(a===b){
         alert('покупка совершена');
      }else if(a>b){
