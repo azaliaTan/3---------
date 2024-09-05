@@ -29,10 +29,10 @@ let b;
 
 if(c>0){
     alert(1);
-}else if(c===0){
-    alert(0);
-}else if(c<0){
+} else if(c<0){
     alert(-1);
+} else{
+    alert(0);
 }
 
 
@@ -42,18 +42,22 @@ if(c>0){
 let aa;
 let bb;
 
-let result=(aa+bb<4)?'мало':'много';
+aa=prompt('введите число а',0);
+bb= prompt('введите число b',0);
+
+let result=(aa + bb < 4)?'мало':'много';
+alert(result);
 
 
 //4 задание
 
-let login;
+let login = prompt('введите логин');
 
-let message=(login=='сотрудник')? 'привет' : 
+let message=(login=='сотрудник') ? 'привет' : 
 (login =='директор') ? 'здравствуйте' : 
 (login =='') ? 'нет логина' : 
 '';
-
+alert(message);
 //5 задание
 
 let log;
